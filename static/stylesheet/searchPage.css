@@ -1,0 +1,514 @@
+.gotham-medium {
+    font-family: GothamM;
+}
+
+.gotham-light {
+    font-family: GothamL;
+}
+
+.nv-links {
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar-container {
+    flex: 0.9;
+    justify-self: end;
+    height: 2.5rem;
+}
+
+#search-input {
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.07);
+    border: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+#search-input::placeholder {
+    font-family: GothamL;
+    font-size: 1.1rem;
+}
+
+.search-bar:focus {
+    border: solid 1px grey;
+}
+
+.container-1-nv {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+}
+
+.close-filter-mobile {
+    display: none;
+}
+
+.sorting-container {
+    width: min(35rem, 80%);
+    height: 2.5625rem;
+
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#date-input {
+    width: 100%;
+    height: 29px;
+    border-radius: 5px;
+}
+
+#date-input > input{
+     
+}
+
+.filter-submit {
+    height: 2rem;
+    width: 7.875rem;
+    background: #13C0D7 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+}
+
+.button-container > button {
+    height: 100%;
+    width: 100%;
+    background: hsla(0, 0%, 0%, 0.07) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text {
+    font-size: 0.8125rem;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+.active {
+    transition: ease-out 0.3s;
+    background: #13C0D7;
+    color: white;
+}
+
+.container-2 {
+    width: min(87%, 87rem);
+    height: fit-content;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-view-search-container {
+    display: none;
+}
+
+.filter-box-container {
+    /* width: 17.25rem; */
+    width: min(17.25rem, 25%);
+    height: 32.8125rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-input {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+output {
+    font-size: 0.7675rem;
+    font-family: GothamL;
+}
+
+.venue-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-content-container {
+    height: 85%;
+    display: flex;
+    width: 75%;
+}
+
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.filter-text-container {
+    display: flex;
+    justify-content: center;
+    font-family: GothamM;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.fa-filter {
+    color: #13C0D7;
+}
+
+.filter-row-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+}
+
+.row-heading-text {
+    font-family: GothamM;
+    font-size: 0.6875rem;
+}
+
+.row-input > input {
+    width: 100%;
+    background: hsla(0, 0%, 0%, 0.07) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    height: 1.8125rem;
+    padding-left: 0.7rem;
+}
+
+.row-input > input::placeholder, .filter-checkbox > label {
+    font-family: GothamL;
+    font-size: 0.6875rem;
+}
+
+.price-container {
+    width: 100%;
+}
+
+
+.filtered-card-box-container {
+    width: min(57rem, 70%);
+    height: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.filtered-card-container {
+    height: 11.75rem;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.fc-left-half, .fc-right-half {
+    flex: 0.47;
+}
+
+.left-half-content-container {
+    height: 11.75rem;
+}
+
+.course-image {
+    height: 11.75rem;
+    width: 100%;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+
+.course-content-background {
+    box-shadow: rgba(0, 0, 0) 38px -80px 96px -18px inset;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    height: 11.75rem;
+    top: -12rem;
+    z-index: 2;
+    left: 0;
+    border: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-content-container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: GothamM;
+}
+
+.domain-heading {
+    align-self: end;
+    font-size: 0.96rem;
+    color: #d9d9d9;
+}
+
+.course-name {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.course-date {
+    color: #13C0D7;
+    font-size: 0.8625rem;
+}
+
+.fc-right-half {
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.fc-row {
+    font-family: GothamM;
+}
+
+.fc-row1 {
+    font-size: 1.2rem;
+}
+
+.fc-row2 {
+    font-size: 14px;
+    color: #00446f;
+}
+
+.fc-row3 {
+    color: #c973d6;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 425px) {
+    .nv-links {
+        width: 10rem;
+        justify-content: end;
+    }
+
+    .container-1-nv {
+        width: 4rem;
+    }
+
+    .nv-logo > img {
+        width: 8rem;
+    }
+
+    .search-bar-container {
+        display: none;
+    }
+
+    .mobile-view-search-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: fit-content;
+    }
+
+    .search-bar-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #search-input {
+        width: 80%;
+        height: 2.5rem;
+    }
+
+    .row2-mobile-search {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .recommended-text {
+        font-size: 0.8rem;
+        font-family: GothamB;
+        color: #00446f;
+    }
+
+
+    .sorting-container {
+        grid-template-columns: repeat(2, 1fr);
+        height: fit-content;
+    }
+
+    .button-text {
+        font-size: 0.75rem;
+    }
+
+    .button-container {
+        height: 2.5rem;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-box-container {
+        width: 85%;
+        position: absolute;
+        top: 80px;
+        z-index: 20;
+    }
+
+    .filter-content-container {
+        height: 95%;
+    }
+
+    .close-filter-mobile {
+        align-self: end;
+    }
+
+    .filter-text-container {
+        width: 30%;
+    }
+
+    .filtered-card-box-container {
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+    .filtered-card-container {
+        width: 100%;
+        display: block;
+    }
+
+    .course-content-background {
+    }
+
+    .fc-right-half {
+        display: none;
+    }
+}   
+
+@media screen and (max-width: 768px) {
+    .nv-links {
+        width: 10rem;
+        justify-content: end;
+    }
+
+    .logout-text {
+        display: none;
+    }
+
+    .close-filter-mobile {
+        display: flex;
+        align-self: end;
+    }
+
+    .container-1-nv {
+        width: 7rem;
+    }
+
+    .nv-logo > img {
+        width: 8rem;
+    }
+
+    .search-bar-container {
+        display: none;
+    }
+
+    .mobile-view-search-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: fit-content;
+    }
+
+    .search-bar-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #search-input {
+        width: 80%;
+        height: 2.5rem;
+    }
+
+    .row2-mobile-search {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .container-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .filtered-card-box-container {
+        width: 85%;
+        grid-template-columns: 1fr 1fr;
+        height: fit-content;
+        margin-bottom: 10rem;
+    }
+
+    .fc-row1 {
+        font-size: 1rem;
+    }
+
+    .fc-row2, .fc-row3 {
+        font-size: 12px;
+    }
+
+    .domain-heading {
+        font-size: 0.7rem;
+    }
+
+    .course-name {
+        font-size: 0.7rem;
+    }
+
+    .course-date {
+        font-size: 0.6rem;
+    }
+
+    .filter-box-container {
+        width: 75%;
+        position: absolute;
+        top: 80px;
+        z-index: 20;
+        display: none;
+    }
+
+    .recommended-text {
+        font-size: 0.8rem;
+        font-family: GothamB;
+        color: #00446f;
+    }
+
+    .row2-mobile-search {
+        width: 80%;
+        justify-self: center;
+    }
+
+    .mobile-view-search-container {
+        align-items: center;
+    }
+
+    .search-bar-mobile {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 426px) {
+    .filtered-card-box-container {
+        grid-template-columns: 1fr; 
+    }    
+}
